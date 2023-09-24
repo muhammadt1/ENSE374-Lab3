@@ -1,0 +1,71 @@
+
+
+/*index.html & list.html*/
+.base
+{
+    background-color: #f0f5f9;/*https://imagecolorpicker.com/en/*/
+    margin: auto; /*auto, browser calculates margins, https://www.w3schools.com/css/css3_shadows_box.asphttps://www.w3schools.com/css/css3_shadows_box.asp*/
+    box-shadow: 0 0 20px darkgray;
+    width: 40%; /*controls the width of the boxitself */
+
+}
+/* Custom CSS to set a fixed width for accordion buttons */
+.accordion-button {
+    width: 100%;
+}
+
+
+/*list.html*/
+.icon 
+{ 
+    color: blue;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: #f0f5f9 ;
+    width: 500px;
+    box-shadow:  3px 3px 3px 3px darkgray;
+    
+}
+.second
+{
+    background-color: #f0f5f9 ;
+    margin: auto; /*auto, browser calculates margins */
+    width: 500px;
+    box-shadow: 0 0 20px darkgray;
+}
+
+.strike1::placeholder
+{
+    text-decoration: line-through;
+    
+}
+.strike2::placeholder
+{
+    text-decoration: line-through;
+    
+}
+
+.check
+{
+    accent-color: green;
+}
+
+
+/*General*/
+body
+{
+    text-align: center;
+}
+input
+{
+    width: 40%;
+    text-align: center;
+   
+}
+html
+{
+    margin-top: 40px;
+}
+
+
+
