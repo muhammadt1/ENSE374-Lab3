@@ -6,5 +6,5 @@
     * **Styling: style.css**
 
 * References include: 
-    * getbootstrap.com
+    * www.getbootstrap.com
     * www.w3schools.com/bootstrap/
