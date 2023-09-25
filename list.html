@@ -13,25 +13,32 @@
 </head>
 <body>
 
-    <h3>To Do</h3>
     <br>
-
+    <h2>To Do</h2>
+    <br>
+    
     <div class = "container-fluid">
         <div class = "accordion" id = "accordionEx">
             <div class = "top">
                 <div class = "icon">
-                    <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#emailCollapse" aria-expanded="false" aria-controls="emailCollapse">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-                            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
-                        </svg>
-                        <a href = "mailto: ">Logged in as adam@email.org</a>
-
-                    </button>
-                    
-                    <div class = "collapse" id = "emailCollapse">
-                        <button class = "btn btn-primary btn-sm" >Log Out</button>
-                    </div>
-                   
+                    <h2 class = "mb-0" id = "emailHeading">
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#emailCollapse" aria-expanded="false" aria-controls="emailCollapse">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                            </svg>
+                            <a>Logged in as adam@email.org</a>
+    
+                        </button>
+                        
+                        <div class = "collapse" id = "emailCollapse" aria-labelledby="emailHeading" data-parent="#accordionEx">
+                            <div class = "card-body">
+                                <button class = "btn btn-primary btn-sm" >Log Out</button>
+                            </div>
+                        </div>
+        
+                    </h2>
+                
+                 
                 
                 </div>
             </div>
@@ -41,30 +48,29 @@
         </div>
    
     
+       
         <div class = "second">
             <form>
-            
-                
                 <div class = "input-group mb-3">
                     <label for = "task0"></label>
-                    <input type = "text" placeholder="This is a task claimed by someone else" id = "task0" name="task0" style = " width: 485px; margin-left: 5px; margin-top: 5px;">
+                    <input type = "text" class="form-control border border-gray" placeholder="This is a task claimed by someone else"  id = "task0" name="task0" >
                 </div>
                 
 
                             
                 <div class = "input-group mb-3">
                     <label for = "task1"></label>
-                    <input type = "text" class = "strike1" placeholder = "This is a task claimed and completed" id = "task1" name = "task1" style = "text-decoration: line-through; width: 485px; margin-left: 5px; margin-top: -2px;">
+                    <input type = "text" class="form-control border border-gray" placeholder = "This is a task claimed and completed"  id = "task1" name = "task1" >
 
                 </div>
                 
                 <div class = "input-group mb-3">
                     <div class = "input-group-text">
                         <label for = "task2"></label>
-                        <input class="form-check-input mt-0" type="checkbox" aria-label="First checkbox">
+                        <input class="form-check-input mt-0 turnGreen" type="checkbox" aria-label="First checkbox" >
                     </div>
                     <input type = "text" class = "form-control" placeholder="This is a task claimed by my" id = "task2" name = "task2" >
-                    <button class = "listButtons">Abandon</button>
+                    <button class="btn btn-outline-dark">Abandon</button>
 
                 </div>
 
@@ -72,26 +78,29 @@
                 <div class = "input-group mb-3">
                     <div class = "input-group-text">
                         <label for = "task3"></label>
-                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="First checkbox">
+                        <input class="form-check-input mt-0 turnGreen" type="checkbox" value="" aria-label="second checkbox" >
                     </div>
-                    <input type = "text" class = "form-control" placeholder="This is a task claimed and completed by me" id = "task3" name = "task3" style = "text-decoration: line-through;">
+
+                    <input type = "text" class = "form-control" placeholder="This is a task claimed and completed by me" id = "task3" name = "task3">
+                
+                    
                 </div>
 
     
                 <div class ="input-group mb-3">
                     <label for = "task4"></label>
-                    <input type = "text" placeholder="This is an unclaimed task" id = "task4" name = "task4" style="width: 420px; margin-left: 5px;" >
-                    <button class = "listButtons">Claim</button>
+                    <input type = "text"class="form-control border border-gray"  placeholder="This is an unclaimed task" class="form-control border border-gray" id = "task4" name = "task4" >
+                    <button class="btn btn-outline-dark">Claim</button>
                 </div>
 
                 <div class ="input-group mb-3">
                     <label for = "task5"></label>
-                    <input type = "text" placeholder="Enter a new task here" id = "task5" name = "task5" style = "width: 440px;margin-left: 5px;"><br>                    
-                    <button class = "listButtons">Add</button><br>            
+                    <input type = "text" class="form-control border border-gray"  placeholder="Enter a new task here" class="form-control border border-gray" id = "task5" name = "task5"><br>                    
+                    <button class="btn btn-outline-dark">Add</button><br>            
                 </div>
         
     
-                <button class = "listButtons" style = "margin-bottom: 5px;" >Remove Complete</button>
+                <button class="btn btn-outline-dark" style = "margin-bottom: 5px;" >Remove Complete</button>
         
             </form>
             
