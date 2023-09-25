@@ -20,9 +20,11 @@
         <div class = "accordion" id = "accordionEx">
             <div class = "base">
                 <div class = "accordion-item" id="loginAccordion">
-                    <button class = "accordion-button text-primary" type = "button"data-bs-toggle="collapse" data-bs-target="#loginCollapse" aria-expanded="true" aria-controls="loginCollapse" >Log In</button>
+                    <h2 class = "accordion-header" id = "loginHeading">
+                        <button class = "accordion-button text primary" type = "button" data-bs-toggle="collapse" data-bs-target="#loginCollapse" aria-expanded="true" aria-controls="loginCollapse" >Log In</button>
+                    </h2>
                 
-                    <div id="loginCollapse" class="accordion-collapse collapse show " aria-labelledby="loginHeading" data-bs-parent="#loginAccordion">
+                    <div id="loginCollapse" class="accordion-collapse collapse show " aria-labelledby="loginHeading" data-bs-parent="#accordionEx">
                         <div class = "accordion-body">
                             <h1 class = "h4 text-dark">Log In</h1>
                             <form action = "list.html" method ="POST">
@@ -46,12 +48,14 @@
             </div><!--base-->
         
 
-            <div class = "accordion-item" id="loginAccordion">
+            <div class = "accordion-item" id="registerAccordion">
                 <div class = "base">
-                    <div class = "accordion-item" id = "loginAccordion">
-                        <button class = "accordion-button text-primary" type = "button"data-bs-toggle="collapse" data-bs-target="#loginCollapse" aria-expanded="true" aria-controls="loginCollapse">Register</button>
+                    <div class = "accordion-item" id = "registerAccordion">
+                        <h2 class = "accordion-header" id = registerHeading>
+                            <button class = "accordion-button text" type = "button"data-bs-toggle="collapse" data-bs-target="#registerCollapse" aria-expanded="true" aria-controls="registerCollapse">Register</button>
+                        </h2>
 
-                        <div id="loginCollapse" class="accordion-collapse collapse" aria-labelledby="loginHeading" data-bs-parent="#loginAccordion">
+                        <div id="registerCollapse" class="accordion-collapse collapse" aria-labelledby="registerHeading" data-bs-parent="#loginAccordion">
                             <div class = "accordion-body">
                                 <h1 class  = "h4 text-dark">Sign up</h1>
                                 <form action = "list.html" method = "POST">
