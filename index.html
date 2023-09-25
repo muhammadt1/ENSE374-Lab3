@@ -13,27 +13,29 @@
    
 </head>
 <body>
-    <h1>To do Prototype</h1>
-    
+    <h3>To do Prototype</h3>
+    <br>
+
     <div class = "container-fluid">
         <div class = "accordion" id = "accordionEx">
             <div class = "base">
                 <div class = "accordion-item" id="loginAccordion">
-                    <button class = "accordion-button" type = "button"data-bs-toggle="collapse" data-bs-target="#loginCollapse" aria-expanded="true" aria-controls="loginCollapse">Log In</button>
+                    <button class = "accordion-button text-primary" type = "button"data-bs-toggle="collapse" data-bs-target="#loginCollapse" aria-expanded="true" aria-controls="loginCollapse" >Log In</button>
                 
                     <div id="loginCollapse" class="accordion-collapse collapse show " aria-labelledby="loginHeading" data-bs-parent="#loginAccordion">
                         <div class = "accordion-body">
-                            <h1>Log In</h1>
+                            <h1 class = "h4 text-dark">Log In</h1>
                             <form action = "list.html" method ="POST">
                                 <label for="Email">Email address</label> <br>
                                 <input type = "email" id = "Email" placeholder = "Email Address" name = "Email" >
                                 <br>
                         
                                 <label for = "Password">Password</label><br>
-                                <input type = "password" id = "Password" placeholder="User Password" id = "Password" name = "Password"> 
+                                <input type = "password" id = "Password" placeholder="User Password" id = "Password" name = "Password" > 
                                 <br>
-                        
-                                <button>Log In</button>
+
+                                <br>
+                                <button class = "btn btn-primary btn-sm">Log In</button>
                                 <br>
                                 <br>
                             </form>
@@ -47,11 +49,11 @@
             <div class = "accordion-item" id="loginAccordion">
                 <div class = "base">
                     <div class = "accordion-item" id = "loginAccordion">
-                        <button class = "accordion-button" type = "button"data-bs-toggle="collapse" data-bs-target="#loginCollapse2" aria-expanded="true" aria-controls="loginCollapse2">Register</button>
+                        <button class = "accordion-button text-primary" type = "button"data-bs-toggle="collapse" data-bs-target="#loginCollapse2" aria-expanded="true" aria-controls="loginCollapse2">Register</button>
 
-                        <div id="loginCollapse2" class="accordion-collapse collapse " aria-labelledby="loginHeading" data-bs-parent="#loginAccordion">
+                        <div id="loginCollapse2" class="accordion-collapse collapse" aria-labelledby="loginHeading" data-bs-parent="#loginAccordion">
                             <div class = "accordion-body">
-                                <h1>Sign up</h1>
+                                <h1 class  = "h4 text-dark">Sign up</h1>
                                 <form action = "list.html" method = "POST">
                                     <label for="EmailSign">Email address</label> <br>
                                     <input type = "email" id = "EmailSign" placeholder = "Email Address" name = "EmailSign"> <!--placeholder acts as a short hint for expected input -->
@@ -65,7 +67,8 @@
                                     <input type = "password" id = "Authentication" placeholder = "Authentication" name = "Authentication">
                                     <br>
                                     
-                                    <button>Sign Up</button>
+                                    <br>
+                                    <button class = "btn btn-primary btn-sm">Sign Up</button>
                                 </form>
                             </div>
                         </div>

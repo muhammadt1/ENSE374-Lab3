@@ -4,3 +4,7 @@
     * **Page-1: index.html**
     * **Page-2: list.html**
     * **Styling: style.css**
+
+* References include: 
+    * getbootstrap.com
+    * www.w3schools.com/bootstrap/
