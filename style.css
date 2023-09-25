@@ -21,8 +21,6 @@
     padding-right: 0%;
     text-align: center;
     font-family: 'Poppins';
-
-
 }
 
 
@@ -44,11 +42,6 @@
     width: 500px;
     box-shadow: 0 0 20px darkgray;
 }
-button.listButtons
-{
-
-}
-
 
 input::placeholder
 {
